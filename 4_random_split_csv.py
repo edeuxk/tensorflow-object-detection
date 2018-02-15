@@ -13,8 +13,8 @@ grouped.apply(lambda x: len(x)).value_counts()
 gb = full_labels.groupby(['filename','xmin'])
 grouped_list = [gb.get_group(x) for x in gb.groups]
 
-# I give 80 images to train with parameter size
-size_for_test = int(len(grouped_list)*0.15) # will be used 
+# I compare total lenght of list and apply 15% of list to test records
+size_for_test = int(len(grouped_list)*0.15)
 train_index = np.random.choice(len(grouped_list), size=(len(grouped_list) - size_for_test), replace=False)
 # I also give the total range of my list
 test_index = np.setdiff1d(list(range(len(grouped_list))), train_index)
