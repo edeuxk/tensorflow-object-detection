@@ -11,8 +11,7 @@
 ## 2 - After labeling please resize convert to csv randomly
 - `python 2_resize_images.py`
 - `python 3_xml_to_csv.py`
-Need modification inside the file by yourself
-`python 4_random_split_csv.py`
+- `python 4_random_split_csv.py`
 
 ## 3 - Generate TF Files for Tensorflow
 ### Modify ssd_mobilenet_v1_pets.config to your files.
