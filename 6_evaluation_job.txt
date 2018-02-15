@@ -1,0 +1,9 @@
+# If you are in a new environment please use this
+cd models/research ; export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim ; protoc object_detection/protos/*.proto --python_out=. ; cd ../..
+
+# then run evaluation python script
+python `pwd`/models/research/object_detection/eval.py \
+    --logtostderr \
+    --pipeline_config_path=`pwd`/train/pipeline.config \
+    --checkpoint_dir=`pwd`/train \
+    --eval_dir=`pwd`/eval
