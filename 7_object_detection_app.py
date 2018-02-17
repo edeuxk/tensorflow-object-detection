@@ -16,12 +16,12 @@ from object_detection.utils import visualization_utils as vis_util
 CWD_PATH = os.getcwd()
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
-PATH_TO_CKPT = os.path.join(CWD_PATH, 'training', 'frozen_inference_graph.pb')
+PATH_TO_CKPT = os.path.join(CWD_PATH, 'data', 'frozen_inference_graph.pb')
 
 # List of the strings that is used to add correct label for each box.
-PATH_TO_LABELS = os.path.join(CWD_PATH, 'training', 'custom_label.pbtxt')
+PATH_TO_LABELS = os.path.join(CWD_PATH, 'data', 'object-detection.pbtxt')
 
-NUM_CLASSES = 90
+NUM_CLASSES = 2
 
 # Loading label map
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
