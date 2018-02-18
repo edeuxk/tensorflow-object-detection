@@ -4,5 +4,5 @@ cd models/research ; export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim ; protoc obj
 # then run train python script
 python `pwd`/models/research/object_detection/train.py \
     --logtostderr \
-    --pipeline_config_path=`pwd`/data/ssd_mobilenet_v1_pets.config \
+    --pipeline_config_path=`pwd`/data/model.config \
     --train_dir=`pwd`/train
