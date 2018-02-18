@@ -1,0 +1,7 @@
+# You need to change CHECKPOINT_NUMBER value to your current training state
+
+python models/research/object_detection/export_inference_graph.py \
+    --input_type image_tensor \
+    --pipeline_config_path `pwd`/train/pipeline.config \
+    --trained_checkpoint_prefix `pwd`/train/model.ckpt-${CHECKPOINT_NUMBER} \
+    --output_directory output_inference_graph.pb
