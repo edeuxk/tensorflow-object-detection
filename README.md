@@ -3,7 +3,7 @@
 
 ``cd models/research ; export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim ; protoc object_detection/protos/*.proto --python_out=. ; cd ../..``
 
-``cd data ; wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz ; tar -xzf ssd_mobilenet_v1_coco_11_06_2017.tar.gz``
+``cd data ; wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2017_11_17.tar.gz ; tar -xzf ssd_mobilenet_v1_coco_2017_11_17.tar.gz``
 
 ## 1 - Convert video to images
 `sh 1_movie_to_images.sh`
