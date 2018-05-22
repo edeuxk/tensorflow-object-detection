@@ -8,8 +8,10 @@
 ## 1 - Convert video to images
 `sh 1_movie_to_images.sh`
 
-## 2 - After labeling please resize convert to csv randomly
+## Run resize image after labeling
 - `python 2_resize_images.py`
+
+## 2 - After resize we'll transform and split the data to csv randomly
 - `python 3_xml_to_csv.py`
 - `python 4_random_split_csv.py`
 
